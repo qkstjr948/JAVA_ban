@@ -1,4 +1,4 @@
-package com.kita.first;
+package IF_ALL;
 
 public class If 
 {

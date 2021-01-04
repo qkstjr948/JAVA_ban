@@ -1,4 +1,4 @@
-package com.kita.first;
+package BASIC;
 
 public class Printf 
 {

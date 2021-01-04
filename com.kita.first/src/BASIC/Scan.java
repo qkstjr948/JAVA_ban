@@ -1,4 +1,4 @@
-package com.kita.first;
+package BASIC;
 import java.util.Scanner;
 
 public class Scan 

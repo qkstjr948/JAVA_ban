@@ -2,6 +2,7 @@ package com.kita.first.practice;
 import java.util.Scanner;
 public class Practice5 {
 	public static void main(String[] args) {
+		
 		//수학 응시 유형을 입력해 주세요 : (가/나)
 		Scanner scan1 = new Scanner(System.in);
 		System.out.print("수학 응시 유형을 입력해 주세요 : (가/나)");
@@ -13,6 +14,7 @@ public class Practice5 {
 		scan1.close();
 		scan2.close();
 		// 조건	가형 기준 60 나형 기준 70
+		/*
 		if("가".equals(mathType)) { // 문자를 비교하는 것 
 			if(TestPoint==60) {
 				//평균
@@ -41,11 +43,12 @@ public class Practice5 {
 				//평균초과
 			}
 		}
+		*/
 		// 함축화 선생님이 하신 것
-		int defaultScore = 70;
+		int defaultScore = 70; // 70으로 지정하게 되면 경우가 1개가 줄어든다.
 		if("가".equals(mathType) || "나".equals(mathType)) { // 문자를 비교하는 것
 			if("가".equals(mathType)) {
-				defaultScore = 60;
+				defaultScore = 60; // 가 타입이면 60으로 지정
 			}
 			if(TestPoint==defaultScore) {
 				System.out.println("평균입니다.");

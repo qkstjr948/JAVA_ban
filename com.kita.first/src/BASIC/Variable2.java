@@ -1,9 +1,7 @@
-package com.kita.first.practice;
+package BASIC;
 
-public class Variable2 
-{
-	public static void main(String[]srgs) 
-	{
+public class Variable2 {
+	public static void main(String[]srgs) {
 		int num = 5_000_000; // 단위를 보기 편하다!
 		System.out.println(num);
 		///////////////////////////////////////////////
