@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Practice16 {
 	public static void main(String[]args) {
 		//메뉴뽑기를 한번 한 후에 마음에 들면 Y눌러서 반복을 끝내고 마음에 안 들면 다시 랜덤 뽑기
+		Scanner scan = new Scanner(System.in); // 스캔 선언
 		String menu1="호르몬야키" , menu2="저스트 텐동" 
 				, menu3="치킨" , menu4="피자" 
 				, menu5="미소라멘" , menu6="스시";
@@ -35,19 +36,19 @@ public class Practice16 {
 			}
 			
 			// 대답하는 부분
-			Scanner scan = new Scanner(System.in);
 			String cotae = scan.next();
-			
 			
 			if("Y".equals(cotae)){
 				System.out.println("메뉴선택이 완료 되었습니다.");
-				scan.close();
+				
 				break;
 			}
-			else if(cotae == "N"){
+			else if("N".equals(cotae)){
 				System.out.println("메뉴를 다시 선택하겠습니다.");
 			}
 			//
 		} while(true); // 조건을 만족했을 때 break;
+		scan.close();
+		
 	}
 }
