@@ -5,10 +5,32 @@ public class Practice24 {
 		int[]arr = {34,67,2,11,6,80};
 		int min = 0;
 		int temp=0;
+
 		// 선택정렬
-		
-		
-		
+		for ( int i = 0; i<arr.length;i++ ) {
+			min = i; 
+			
+			for ( int z =i+1; z<arr.length ;z++ ) {	
+				if (arr[min] > arr[z]) { 	
+					min =z;
+				}
+				
+			}
+			System.out.println(min);
+			System.out.println();
+			System.out.println(i);
+			if (min!=i) {
+				
+				temp=arr[i];
+				arr[i] = arr[min];
+				arr[min] =temp;
+			}
+		}
+		for( int val:arr) {
+			System.out.print(val+" " );
+		}
+
+		/*
 		// 버블정렬
 		int[]arr1 = {5,3,8,1,2,7};
 		int box=0;
@@ -32,5 +54,6 @@ public class Practice24 {
 		for(int one=0; one<arr1.length; one++) {
 			System.out.print(arr1[one]);
 		}
+		*/
 	}
 }
